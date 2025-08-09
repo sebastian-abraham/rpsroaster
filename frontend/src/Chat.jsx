@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+  import { useState, useEffect, useRef } from "react";
 
 const responses = [
   "U noob",
@@ -47,7 +47,9 @@ export const Chat = () => {
       >
         Bot: <span className="font-normal">{currentMessage}</span>
       </div>
-      <div className={`absolute bottom-[110px] left-[850px] ${containerWidth} h-[80px] bg-gray-900 rounded-lg p-4 flex items-center z-50 overflow-hidden transition-all duration-700`}>
+      <div
+        className={`absolute bottom-[110px] left-[1100px] ${containerWidth} h-[80px] bg-gray-900 rounded-lg p-4 flex items-center z-50 overflow-hidden transition-all duration-700`}
+      >
         <div
           className="bg-gray-700 px-4 py-2 rounded-lg shadow text-white font-bold w-full transition-all duration-300"
           style={{

@@ -20,9 +20,6 @@ export async function handleFrame(frame, n) {
   const prompt = `You need to reply to this with a roast the context is, you have beaten the person in the image in game of rock paper scissors, and now roast them you can use any physical appearnece or outfit they wear or have make the roast creative surprise, also ${n} is the number of times you have lost to them and roasted them so far so include that in the context `;
   const imagePart = base64ToGenerativePart(frame, "image/jpeg");
   try {
-    const result = await model.generateContent([prompt, imagePart]);
-    const response = await result.response;
-    const text = response.text();
     console.log(text);
   } catch (err) {
     console.error("Gemini image processing error:", err);
