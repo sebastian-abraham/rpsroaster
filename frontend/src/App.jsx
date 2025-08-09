@@ -5,11 +5,13 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Environment } from '@react-three/drei';
 import { RiggedHand } from './Hand.jsx';
 import {CameraFeed} from './Camera.jsx';
+import {Chat} from './Chat.jsx'
 
 export default function App() {
   return (
-    <div className="min-h-screen w-full bg-black">
+    <div className="min-h-screen w-full bg-gray-900">
       <CameraFeed />
+      <Chat />
       <Canvas camera={{ position: [0, 0, 3], fov: 50 }}>
         {/* Lights are essential to see anything */}
         <ambientLight intensity={0.5} />
